@@ -1,0 +1,11 @@
+
+<h1>Notes</h1>
+<div class="notes">
+  <ul>
+  @for(note of notesList; track $index){
+      <li>{{ note }}</li>
+    }
+  </ul>
+  <input type="text" [(ngModel)]="note" />
+  <button (click)="createNote()">Create note</button>
+</div>
