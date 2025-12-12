@@ -1,0 +1,12 @@
+<h1>Tienda (Componente Padre)</h1>
+<h2>Artículos en el carrito: {{ cartCount }}</h2>
+
+<div class="product-list">
+    @for (product of products; track product.id) {
+        
+        <app-product-card 
+          [product]="product" 
+          (addedToCart)="handleAddToCart($event)">
+        </app-product-card>
+    }
+</div>

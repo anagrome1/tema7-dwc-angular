@@ -1,0 +1,69 @@
+/*
+ * Archivo: product-card.component.css
+ */
+
+.product-card {
+    /* Contenedor principal de la tarjeta */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    /* Efecto al pasar el ratón */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+    /* Estilo para el nombre del producto */
+    color: #333;
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    /* Estilo para el precio */
+    color: #007bff; /* Azul primario para destacar */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    /* Estilo para el botón Añadir al Carrito */
+    background-color: #28a745; /* Verde para la acción principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%; /* El botón ocupa todo el ancho de la tarjeta */
+}
+
+button:hover {
+    background-color: #218838; /* Un verde más oscuro al pasar el ratón */
+}
+
+/* Estilo para la lista de productos en el componente Padre (TiendaComponent) 
+   -- Esto es útil si lo añades a tienda.component.css --
+*/
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+}
